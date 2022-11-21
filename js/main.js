@@ -53,10 +53,9 @@ function getCode(e) {
   const color = document.querySelector('#foreground-color').value;
   const bgcolor = document.querySelector('#background-color').value;
   console.log(data, size, color, bgcolor);
-  const url = new CodeURL(data, size, color, bgcolor, 'svg');
-  const url2 =
-    'https://api.qrserver.com/v1/create-qr-code/?data=Hello%20World!&size=100x100';
+  const url = new CodeURL(data, size, color, bgcolor, 'gif');
   const img = document.querySelector('img');
   img.src = url.fullUrl;
+  img.classList.remove('hidden');
   console.log(url.fullUrl);
 }

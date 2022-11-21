@@ -3,18 +3,79 @@
 /*******************************************/
 
 /* Box Model Hack */
-*{
+* {
   box-sizing: border-box;
+  font-family: monospace;
+}
+h1 {
+  font-family: 'Fira Code', monospace;
+  font-size: 3em;
+}
+body {
+  background-color: hotpink;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-img{
+header {
+  display: flex;
+  justify-content: center;
+  background: black;
+  color: white;
+}
+img {
   display: block;
   margin: 0 auto;
+  padding: 1em;
+  background: white;
+  height: 400px;
+  width: 400px;
+}
+.border {
+  border: 3px black solid;
+  filter: drop-shadow(1em 1em black);
+}
+.hidden {
+  display: none;
+}
+.form {
+  background: yellow;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em 1em;
+}
+.inputs {
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+}
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.data-input {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+.data-input input {
+  flex-grow: 1;
+}
+.size {
+  display: none;
+}
+.color-picker {
+  margin: 1em 1em;
+  display: flex;
+  align-items: center;
+}
+button {
+  align-self: center;
+  justify-self: center;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
