@@ -1,0 +1,19 @@
+{
+  "name": "qr-code-generator",
+  "version": "1.0.0",
+  "description": "another qr code generator",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elykkyle/qr-code-generator.git"
+  },
+  "author": "Kyle Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elykkyle/qr-code-generator/issues"
+  },
+  "homepage": "https://github.com/elykkyle/qr-code-generator#readme"
+}
